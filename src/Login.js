@@ -4,6 +4,7 @@ import "./Login.css";
 import { auth, provider } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import { actionTypes } from "./reducer";
+import WhatsAppLogo from "./WhatsApp-logo.png";
 
 export default function Login() {
   const [{}, dispatch] = useStateValue();
@@ -21,7 +22,7 @@ export default function Login() {
   return (
     <div className="login">
       <div className="login__container">
-        <img src="https://upload.wikimedia.org/wikipedia" alt="Login" />
+        <img src={WhatsAppLogo} alt="Login" />
         <div className="login__text">
           <h1>Sign in to WhatsApp</h1>
         </div>
